@@ -1,0 +1,13 @@
+image: python:3.7-buster
+
+pages:
+  stage: deploy
+  script:
+  - pip install -r requirements.txt
+  - pip install -r requirements-dev.txt
+  - sphinx-build -b html docs public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master

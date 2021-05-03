@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/home/compass/miniconda3/bin/python",
+    "restructuredtext.confPath": "${workspaceFolder}\\docs"
+}
